@@ -1,0 +1,127 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+<style type="text/css">
+/*   .container {
+    width: 80%;
+    max-width: 1500px;
+    margin: 50px auto;
+  }
+  */
+  div.accordion {
+    border-top: 1px solid black;
+    width: 100%;
+    /*background-color: whitesmoke;*/
+    /*       border: none; */
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    /*color: #444;*/
+    cursor: pointer;
+    /*transition: background-color 0.2s linear;*/
+  }
+
+  div.accordion:after {
+    content: '\f105';
+    font-family: "fontawesome";
+    font-size: 14px;
+    float: right;
+    
+  }
+
+  div.accordion.is-open:after {
+    content: '\f107';
+    
+  }
+
+  div.accordion:hover, div.accordion.is-open {
+    /*background-color: #ddd;*/
+    color:#F37C1F;
+  }
+
+  .accordion-content {
+    /*background-color: white;*/
+     /* border-left: 1px solid whitesmoke;
+     border-right: 1px solid whitesmoke;*/
+     padding: 0 20px;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-in-out;
+   }
+ </style>
+
+
+
+ <style type="text/css">
+  .formcari{
+    margin-bottom: 10px;
+    margin-top: -40px;
+    width: 100%;
+    margin-left: 60%;
+  }
+</style>
+
+
+<div class="container">
+  
+
+
+
+
+  <div class="accordion">tes
+  </div>
+  <div class="accordion-content">
+    1
+  </div>
+
+  <div class="accordion">tes
+  </div>
+  <div class="accordion-content">
+    2
+  </div>
+
+  <div class="accordion">tes
+  </div>
+  <div class="accordion-content">
+    3
+  </div>
+
+  <div class="accordion">tes
+  </div>
+  <div class="accordion-content">
+    4
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+<!-- contend ends here -->
+<script>
+  var accordions = document.getElementsByClassName("accordion");
+
+  for (var i = 0; i < accordions.length; i++) {
+    accordions[i].onclick = function() {
+      this.classList.toggle('is-open');
+
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+      // accordion is currently open, so close it
+      content.style.maxHeight = null;
+    } else {
+      // accordion is currently closed, so open it
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  }
+}
+</script>

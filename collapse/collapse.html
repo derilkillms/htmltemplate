@@ -1,0 +1,280 @@
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+  <style type="text/css">
+    .container {
+      width: 80%;
+      max-width: 600px;
+      margin: 50px auto;
+    }
+
+    div.accordion {
+      width: 100%;
+      /*background-color: whitesmoke;*/
+      border: none;
+      outline: none;
+      text-align: left;
+      padding: 15px 20px;
+      font-size: 18px;
+      /*color: #444;*/
+      cursor: pointer;
+      /*transition: background-color 0.2s linear;*/
+    }
+
+    div.accordion:after {
+      content: '\f055';
+      font-family: "fontawesome";
+      font-size: 14px;
+      float: right;
+    }
+
+    div.accordion.is-open:after {
+      content: '\f056';
+    }
+
+    div.accordion:hover, div.accordion.is-open {
+      /*background-color: #ddd;*/
+    }
+
+    .accordion-content {
+      /*background-color: white;*/
+     /* border-left: 1px solid whitesmoke;
+     border-right: 1px solid whitesmoke;*/
+     padding: 0 20px;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-in-out;
+   }
+ </style>
+
+ <style>
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+</style>
+<!-- content starts here -->
+<div class="container">
+  <h1>Accordions</h1>
+
+  <div class="accordion">Accordian #1</div>
+  <div class="accordion-content">
+    <p>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </p>
+    
+  </div>
+
+
+  <div class="accordion">Accordian #2</div>
+  <div class="accordion-content">
+    <p>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </p>
+  </div>
+
+
+  <div class="accordion">Accordian #3</div>
+  <div class="accordion-content">
+    <p>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </p>
+  </div>
+
+
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<!-- contend ends here -->
+<script>
+  var accordions = document.getElementsByClassName("accordion");
+
+  for (var i = 0; i < accordions.length; i++) {
+    accordions[i].onclick = function() {
+      this.classList.toggle('is-open');
+
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+      // accordion is currently open, so close it
+      content.style.maxHeight = null;
+    } else {
+      // accordion is currently closed, so open it
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  }
+}
+</script>
+</body>
+</html>
+
